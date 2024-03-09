@@ -1,0 +1,18 @@
+
+Copy code
+#gridContainer {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    gap: 1px;
+    border: 1px solid #000;
+    width: 320px; /* Adjust this according to your preference */
+    height: 320px; /* Adjust this according to your preference */
+}
+
+.grid-cell {
+    background-color: #fff;
+    border: 1px solid #000;
+    width: calc(100% / 16);
+    height: calc(100% / 16);
+}
