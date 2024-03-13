@@ -6,14 +6,22 @@
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<h1>Etch-A-Sketch</h1>
 
-<div class="flex-container">
-    <div class="title"></div>
-    <div class="content"></div>
-    <div class="board"></div>
-</div>
+
 <body>
+    <h1>Etch-A-Sketch</h1>
+    <p id="message"></p>
+    <button id="popUp" onclick="getSize()"> Select Size</button>
+    <div class="drawBoard">
+        
+    </div>
+    <div class="footer">
+        <button onclick="getColour(`black`)">Black</button>
+        <button onclick="getColour(`random`)" > Random </button>
+        
+        <button onclick="resetBoard()">Reset</button>
+
+    </div>
 <script src="script.js"></script>
 </body>
 </html>

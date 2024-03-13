@@ -1,18 +1,29 @@
-
-Copy code
-#gridContainer {
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-    gap: 1px;
-    border: 1px solid #000;
-    width: 320px; /* Adjust this according to your preference */
-    height: 320px; /* Adjust this according to your preference */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-.grid-cell {
-    background-color: #fff;
-    border: 1px solid #000;
-    width: calc(100% / 16);
-    height: calc(100% / 16);
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 500px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 500px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.drawBoard{
+    display: grid;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    padding-bottom: 50px
 }
